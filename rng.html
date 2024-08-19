@@ -44,7 +44,6 @@
         <meta property="twitter:description" content="Hello, my name is Bagus Septianto.">
         <meta property="twitter:image" content="https://bagusseptianto.com/assets/Black.png">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <div style="margin: auto; text-align: center;">
@@ -54,9 +53,9 @@
             <div id="RNG"></div>
         </div>
         <script>
-$( document ).ready(() => {
+document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("RNG").innerHTML = "From Math.random() : " + Math.floor((Math.random() * 100) + 1);
-})
+});
         </script>
     </body>
 </html>
